@@ -1,0 +1,24 @@
+spring:
+  datasource:
+#    url: jdbc:postgresql://81.200.148.199:5432/bozor_db
+#    username: postgres
+#    password: 123456789A
+    url: jdbc:postgresql://localhost:5432/bot-db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  mvc:
+    format:
+      date: dd/MM/yyyy
